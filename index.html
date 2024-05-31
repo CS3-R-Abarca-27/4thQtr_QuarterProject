@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <div class="content-wrapper">
+        <div class="content">
+            <div class="logo">
+                <img src="dolph.png" alt="logohere">
+            </div>
+            <div class="section">
+                <div class="home">
+                    <h1><a href="marinesite.html">Home</a></h1>
+                </div>
+                <div class="about">
+                    <h1><a href="aboutus.html">About us</a></h1>
+                </div>
+                <div class="wycd">
+                    <h1><a href="wycd.html">What you can do</a></h1>
+                </div>
+            </div>
+            <a href="signin.html" class="joinus">Sign Up</a>
+            
+            <pre class="slogan">
+                Making waves for a 
+                better ocean
+                future
+            </pre>
+            <pre class="bslogan">
+                Your time today makes it possible for us
+                to protect the ocean forever.
+            </pre>
+            <a href="signin.html" class="bjoinus">Join us now</a>
+        </div>
+    </div>
+    
+</body>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100vh; 
+        overflow: hidden; 
+        background: url('dolphins.png') center/cover no-repeat;
+        color: white;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        font-size: 10px;
+    }
+
+    .content-wrapper {
+        width: 100%;
+        height: 100vh; 
+        overflow-y: auto; 
+        scrollbar-width: none; 
+        -ms-overflow-style: none; 
+    }
+
+    .content-wrapper::-webkit-scrollbar {
+        display: none; 
+    }
+
+    .content {
+        height: 200vh; 
+        padding: 20px;
+        box-sizing: border-box;
+        text-align: center;
+        position: relative; 
+    }
+
+    .logo {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+
+    .logo img {
+        width: 75px; 
+        height: auto; 
+    }
+
+    .section {
+        margin-top: 35px;
+        font-family: 'Franklin Gothic Medium';
+        font-size: 12px;
+        font-stretch: expanded;
+    }
+
+    .section h1 {
+        margin: 0;
+    }
+
+    .section a {
+        color: white; 
+        text-decoration: none; 
+        position: relative; 
+    }
+
+    .section a::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: -5px;
+        left: 0;
+        background-color: #1D386E;
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .section a:hover::after {
+        visibility: visible;
+        transform: scaleX(1);
+    }
+
+    .about {
+        margin-left: 250px;
+        margin-top: -28px;
+    }
+
+    .wycd {
+        margin-left: 600px;
+        margin-top: -28px;
+    }
+
+    .joinus {
+        background-color: #1D386E;
+        border: none;
+        font-weight: bold;
+        color: #FD5C6C;
+        padding: 15px 50px;
+        text-decoration: none;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 25px;
+        transition: background-color 0.3s;
+        position: absolute;
+        top: 45px;
+        right: 20px;
+        display: block; 
+        font-family: 'Franklin Gothic Medium';
+        font-weight: bold;
+    }
+
+    .joinus:hover {
+        background-color: #FD5C6C;
+        color: #1D386E;
+        text-decoration: none;
+    }
+
+    .joinus:hover a {
+        color: #1D386E;
+        text-decoration: none;
+    }
+
+    .joinus a {
+        text-decoration: none;
+        color: #FD5C6C;
+    }
+
+    .slogan {
+        font-family: 'Franklin Gothic Medium';
+        font-size: 60px;
+        font-weight: bold;
+        margin-left: -800px;
+    }
+
+    .bslogan {
+        font-family:'arial';
+        font-size: 20px;
+        font-weight: bold;
+        margin-left: -655px;
+        margin-top: -115px;
+    }
+
+    .bjoinus {
+        background-color: #1D386E;
+        border: none;
+        font-weight: bold;
+        color: #FD5C6C;
+        padding: 20px 70px; 
+        text-decoration: none;
+        font-size: 20px; 
+        cursor: pointer;
+        border-radius: 30px; 
+        transition: background-color 0.3s;
+        position: absolute;
+        top: 430px;
+        right: 775px;
+        display: block; 
+        font-family: 'Franklin Gothic Medium';
+        font-weight: bold;
+    }
+
+    .bjoinus:hover {
+        background-color: #FD5C6C;
+        color: #1D386E;
+        font-weight: bold;
+    }
+</style>
+</html>

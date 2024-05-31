@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <div class="content-wrapper">
+        <div class="content">
+            <div class="logo">
+                <img src="dolph.png" alt="logohere">
+            </div>
+            <div class="section">
+                <div class="home">
+                    <h1><a href="marinesite.html">Home</a></h1>
+                </div>
+                <div class="about">
+                    <h1><a href="aboutus.html">About us</a></h1>
+                </div>
+                <div class="wycd">
+                    <h1><a href="wycd.html">What you can do</a></h1>
+                </div>
+            </div>
+
+            <div class="conserve">
+                <pre class="one">
+                    Ocean Advocacy
+                </pre>
+
+                <pre class="two">
+                    A healthy ocean is essential to all life on Earth. The 
+                    ocean is not limitless, and today, marine species and 
+                    ecosystems are facing unprecedented threats due to human
+                    use and destructive practices.
+                </pre>
+
+                <pre class="three">
+                    Scientific studies have confirmed that well-regulated, 
+                    well-enforced marine protected areas (MPAs) can provide 
+                    significant ecological benefits, increase resilience to 
+                    natural and anthropogenic disturbances, and allow for 
+                    ecosystem recovery. For example, fully- and highly-protected 
+                    MPAs can allow depleted fish populations to recover, serve 
+                    as refuges for endangered species, and increase resilience 
+                    to climate change.
+
+                    At Marine Conservation Institute, we utilize the best 
+                    available science to identify important marine ecosystems 
+                    and advocate for their protection. We advocate for the creation 
+                    of MPAs, strong and effective regulations, and preserving 
+                    representative and special areas in the world’s oceans. We have 
+                    been doing this work since the onset of our organization and will 
+                    continue to do so as we strive toward 30% of the ocean protected 
+                    by 2030.
+                </pre>
+
+            </div>
+</body>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100vh; 
+        overflow: hidden; 
+        background: url('dolphins.png') center/cover no-repeat;
+        color: white;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        font-size: 10px;
+    }
+
+    .content-wrapper {
+        width: 100%;
+        height: 100vh; 
+        overflow-y: auto; 
+        scrollbar-width: none; 
+        -ms-overflow-style: none; 
+    }
+
+    .content-wrapper::-webkit-scrollbar {
+        display: none; 
+    }
+
+    .content {
+        height: 200vh; 
+        padding: 20px;
+        box-sizing: border-box;
+        text-align: center;
+        position: relative; 
+    }
+
+    .logo {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+
+    .logo img {
+        width: 75px; 
+        height: auto; 
+    }
+
+    .section {
+        margin-top: 35px;
+        font-family: 'Franklin Gothic Medium';
+        font-size: 12px;
+        font-stretch: expanded;
+    }
+
+    .section h1 {
+        margin: 0;
+    }
+
+    .section a {
+        color: white; 
+        text-decoration: none; 
+        position: relative; 
+    }
+
+    .section a::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: -5px;
+        left: 0;
+        background-color: #1D386E;
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .section a:hover::after {
+        visibility: visible;
+        transform: scaleX(1);
+    }
+
+    .about {
+        margin-left: 250px;
+        margin-top: -28px;
+    }
+
+    .wycd {
+        margin-left: 600px;
+        margin-top: -28px;
+    }
+    .one {
+        font-size: 35px;
+        font-family: 'Franklin Gothic Medium';
+        text-align: left;
+        margin-left: -150px;
+        color: #1D386E
+    }
+    .two {
+        font-size: 25px;
+        font-family: 'Franklin Gothic Medium';
+        text-align: left;
+        color: #FD5C6C;
+        
+    }
+    .three {
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium';
+        background-color: rgba(240, 248, 255, 0.3)
+        margin-left: -50px;
+    }
+</style>
+</html>

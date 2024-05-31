@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <div class="content-wrapper">
+        <div class="content">
+            <h1 class="abt">About us</h1>
+            <div class="whos">
+            <pre class="who">
+                The Marine Conservation Organization is 
+                Pisay Caraga’s marine conservation 
+                advocacy by and for ocean lovers. We work 
+                towards our vision of a sea full of life, where 
+                nature flourishes and people thrive.
+            </pre>
+            <pre class="bwho">
+                The Marine Conservation Organization was founded in Butuan City, 
+                Philippines in 2024 by a Red Abarca during a quarter project assigned 
+                to them by their subject teacher. Red was one of the people 
+                who were growing increasingly concerned by the degradation of 
+                marine habitats and its wildlife.
+
+                Ever since its initial beginnings, The Marine Conservation 
+                Organization has placed community involvement and educational 
+                outreach at the heart of the non-profit organization when 
+                campaigning for the protection of marine environments.
+
+            </pre>
+            </div>
+            <div class="logo">
+                <img src="dolph.png" alt="logohere">
+            </div>
+            <div class="section">
+                <div class="home">
+                    <h1><a href="marinesite.html">Home</a></h1>
+                </div>
+                <div class="about">
+                    <h1><a href="aboutus.html">About us</a></h1>
+                </div>
+                <div class="wycd">
+                    <h1><a href="wycd.html">What you can do</a></h1>
+                </div>
+            </div>
+            <a href="signin.html" class="joinus">Sign Up</a>
+        </div>
+    </div>
+</body>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        overflow: hidden; /* Hide the scrollbar */
+        background: url('whitedolph.png') center/cover no-repeat fixed;
+        color: white;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+        font-weight: bold;
+        font-size: 10px;
+    }
+
+    .content-wrapper {
+        height: 100vh;
+        overflow-y: scroll; /* Enable scrolling within this div */
+        -ms-overflow-style: none;  /* Internet Explorer 10+ */
+        scrollbar-width: none;  /* Firefox */
+    }
+
+    .content-wrapper::-webkit-scrollbar {
+        display: none;  /* Safari and Chrome */
+    }
+
+    .content {
+        height: 200vh; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    h1.abt {
+        top: 250px;
+        left: 250px;
+        transform: translate(-50%, -50%);
+        font-size: 65px;
+        font-family: 'Franklin Gothic Medium';
+    }
+
+    .logo {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+
+    .logo img {
+        width: 75px; 
+        height: auto; 
+    }
+
+    .abt {
+        position: absolute;
+    }
+
+    .section {
+        font-family: 'Franklin Gothic Medium';
+        font-size: 12px; 
+        font-stretch: expanded;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 50px; /* Adjust as needed */
+        margin-left: 300px; /* Adjust as needed */
+    }
+
+    .section h1 {
+        margin: 0;
+    }
+
+    .section a {
+        color: white; 
+        text-decoration: none; 
+        position: relative; 
+    }
+
+    .section a::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: -5px;
+        left: 0;
+        background-color: #1D386E;
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .section a:hover::after {
+        visibility: visible;
+        transform: scaleX(1);
+    }
+
+    .joinus {
+        background-color: #1D386E;
+        border: none;
+        font-weight: bold;
+        color: #FD5C6C;
+        padding: 15px 50px;
+        text-decoration: none;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 25px;
+        transition: background-color 0.3s;
+        font-family: 'Franklin Gothic Medium';
+        font-weight: bold;
+        margin-left: 1045px;
+        margin-top: -1080px;
+    }
+
+    .joinus:hover {
+        background-color: #FD5C6C;
+        color: #1D386E;
+        text-decoration: none;
+    }
+
+    .joinus:hover a {
+        color: #1D386E;
+        text-decoration: none;
+    }
+
+    .joinus a {
+        text-decoration: none;
+        color: #FD5C6C;
+    }
+
+    .home {
+        margin-top: 5px;
+        margin-left: 289px;
+    }
+
+    .about {
+        margin-top: -28px;
+        margin-left: 398.5px;
+    }
+
+    .wycd {
+        margin-top: -28px;
+        margin-left: 532.5px;
+    }
+
+    .whos {
+        font-family: arial;
+        font-size: 25px;
+        color: black;
+
+    }
+
+    .who {
+        font-size: 25px;
+        font-family: arial;
+        background-color: rgba(240, 248, 255, 0.3);
+        margin-top: -750px; 
+        margin-left: -400px;
+    }
+    .bwho {
+        font-size: 15px;
+        font-family: arial;
+        background-color: rgba(240, 248, 255, 0.3); 
+        margin-left: -400px;
+
+    }
+
+</style>
+</html>

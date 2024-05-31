@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <div class="content-wrapper">
+        <div class="content">
+            <h1 class="abt">What you can do</h1>
+            <div class="whos">
+            <h1 class="whatcanyoudo">Around home</h1>
+            <pre class="one">
+                1. Conserve Water
+                    Use less water so excess runoff and wastewater will not 
+                    flow into the ocean.
+            </pre>
+            <pre class="two">
+                2. Reduce Pollutants
+                    Choose nontoxic chemicals and dispose of herbicides, 
+                    pesticides, and cleaning products properly.
+            </pre>
+            <pre class="three">
+                3. Reduce Waste 
+                    Cut down on what you throw away.
+            </pre>
+
+            <h1 class="whatcanyoudo">Around town</h1>
+            <pre class="four">
+                4. Shop Wisely
+                    Choose sustainable seafood. Buy less plastic and 
+                    bring a reusable bag.
+
+            </pre>
+            <pre class="five">
+                5. Conserve Vehicle Pollution
+                    Use fuel efficient vehicles, carpool or ride a bike.
+
+            </pre>
+            <pre class="six">
+                6. Use less Energy 
+                    Choose energy efficient light bulbs and don't overset 
+                    your thermostat.
+
+            </pre>
+
+            <h1 class="whatcanyoudo">On the Water</h1>
+            <pre class="seven">
+                7. Fish Responsibly
+                    Follow "catch and release" practices and keep more fish alive.
+
+
+            </pre>
+            <pre class="eight">
+                8. Practice Safe Boating
+                    Anchor in sandy areas far from coral and sea grasses. Adhere 
+                    to "no wake" zones.
+
+
+            </pre>
+            <pre class="nine">
+                9. Respect Habitat 
+                    Healthy habitat and survival go hand in hand. Treat with care.
+            </pre>
+
+            <h1 class="whatcanyoudo">Anywhere</h1>
+            <pre class="ten">
+                10. Volunteer
+                    Volunteer for cleanups at the beach and in your community. 
+                    You can get involved in protecting your watershed too!
+
+
+            </div>
+            <div class="logo">
+                <img src="dolph.png" alt="logohere">
+            </div>
+            <div class="section">
+                <div class="home">
+                    <h1><a href="marinesite.html">Home</a></h1>
+                </div>
+                <div class="about">
+                    <h1><a href="aboutus.html">About us</a></h1>
+                </div>
+                <div class="wycd">
+                    <h1><a href="wycd.html">What you can do</a></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="signin.html" class="joinus">Sign Up</a>
+
+</body>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        overflow: hidden; 
+        background: url('whitedolph.png') center/cover no-repeat fixed;
+        color: white;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+        font-weight: bold;
+        font-size: 10px;
+    }
+
+    .content-wrapper {
+        height: 100vh;
+        overflow-y: scroll; 
+        -ms-overflow-style: none;  
+        scrollbar-width: none;  
+    }
+
+    .content-wrapper::-webkit-scrollbar {
+        display: none;  
+    }
+
+    .content {
+        height: 200vh; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    h1.abt {
+        top: 250px;
+        left: 250px;
+        transform: translate(-50%, -50%);
+        font-size: 65px;
+        font-family: 'Franklin Gothic Medium';
+    }
+
+    .logo {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+
+    .logo img {
+        width: 75px; 
+        height: auto; 
+    }
+
+    .abt {
+        position: absolute;
+        margin-left: 95px;
+    }
+
+    .section {
+        font-family: 'Franklin Gothic Medium';
+        font-size: 12px; 
+        font-stretch: expanded;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 50px; 
+        margin-left: 300px; 
+    }
+
+    .section h1 {
+        margin: 0;
+    }
+
+    .section a {
+        color: white; 
+        text-decoration: none; 
+        position: relative; 
+    }
+
+    .section a::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: -5px;
+        left: 0;
+        background-color: #1D386E;
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .section a:hover::after {
+        visibility: visible;
+        transform: scaleX(1);
+    }
+
+    .joinus {
+        background-color: #1D386E;
+        border: none;
+        font-weight: bold;
+        color: #FD5C6C;
+        padding: 15px 50px;
+        text-decoration: none;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 25px;
+        transition: background-color 0.3s;
+        position: absolute;
+        top: 45px;
+        right: 20px;
+        display: block; 
+        font-family: 'Franklin Gothic Medium';
+        font-weight: bold;
+    }
+
+    .joinus:hover {
+        background-color: #FD5C6C;
+        color: #1D386E;
+        text-decoration: none;
+    }
+
+    .joinus:hover a {
+        color: #1D386E;
+        text-decoration: none;
+    }
+
+    .joinus a {
+        text-decoration: none;
+        color: #FD5C6C;
+    }
+
+    .home {
+        margin-top: 5px;
+        margin-left: 289px;
+    }
+
+    .about {
+        margin-top: -28px;
+        margin-left: 398.5px;
+    }
+
+    .wycd {
+        margin-top: -28px;
+        margin-left: 532.5px;
+    }
+
+    .whos {
+        font-family: arial;
+        font-size: 20px;
+        color: black;
+        margin-top: 1300px;
+    }
+
+    .one {
+        font-size: 25px;
+        font-family: arial;
+        background-color: rgba(240, 248, 255, 0.3); 
+    }
+    .two {
+        font-size: 25px;
+        font-family: arial;
+        background-color: rgba(240, 248, 255, 0.571); 
+
+    }
+    .three {
+        font-size: 25px;
+        font-family: arial;
+        background-color: rgba(240, 248, 255, 0.3); 
+
+    }
+    .four {
+        font-size: 25px;
+        font-family: arial;
+        background-color: rgba(240, 248, 255, 0.3); 
+
+    }
+    .five {
+        font-size: 25px;
+        font-family: arial;
+        background-color: rgba(240, 248, 255, 0.571); 
+
+    }
+    .six {
+        font-size: 25px;
+        font-family: arial;
+        background-color: rgba(240, 248, 255, 0.3); 
+
+    }
+    .seven {
+        font-size: 25px;
+        font-family: arial;
+        background-color: rgba(240, 248, 255, 0.3); 
+
+    }
+    .eight {
+        font-size: 25px;
+        font-family: arial;
+        background-color: rgba(240, 248, 255, 0.571); 
+
+    }
+    .nine {
+        font-size: 25px;
+        font-family: arial;
+        background-color: rgba(240, 248, 255, 0.3); 
+
+    }
+    .ten {
+        font-size: 25px;
+        font-family: arial;
+        background-color: rgba(240, 248, 255, 0.3); 
+
+    }
+    .joinus {
+    background-color: #1D386E;
+    border: none;
+    font-weight: bold;
+    color: #FD5C6C;
+    padding: 15px 50px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+    position: absolute;
+    top: 45px;
+    right: 20px;
+}
+.joinus:hover {
+    background-color: #FD5C6C;
+    color: #1D386E;
+    font-weight: bold;
+}
+
+
+</style>
+
+</html>
